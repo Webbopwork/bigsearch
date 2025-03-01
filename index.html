@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8", content="Access-Control-Allow-Origin : *">
+  <meta name="viewport" content="width=device-width">
+  <title>BigSearch</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="BigSearch">
+  <meta name="apple-mobile-web-app-title" content="BigSearch">
+  <link rel="manifest" crossorigin="use-credentials" href="search/manifest.json">
+
+  <link rel="shortcut icon" sizes="144x144" href="media/search/resolutions/128x128.png">
+  <link rel="icon" sizes="144x144" href="/bigsearch/media/search/resolutions/128x128.png">
+
+  <link rel="shortcut icon" sizes="128x128" href="/bigsearch/media/search/resolutions/128x128.png">
+  <link rel="icon" sizes="128x128" href="media/search/resolutions/128x128.png">
+
+  <link rel="shortcut icon" sizes="96x96" href="/bigsearch/media/search/96x96.png">
+  <link rel="icon" sizes="96x96" href="/bigsearch/media/search/resolutions/96x96.png">
+
+  <link rel="shortcut icon" sizes="64x64" href="/bigsearch/media/search/64x64.png">
+  <link rel="icon" sizes="64x64" href="/bigsearch/media/search/resolutions/64x64.png">
+
+  <link rel="shortcut icon" sizes="48x48" href="/bigsearch/media/search/48x48.png">
+  <link rel="icon" sizes="48x48" href="/bigsearch/media/search/resolutions/48x48.png">
+
+  <link rel="shortcut icon" sizes="32x32" href="/bigsearch/media/search/32x32.png">
+  <link rel="icon" sizes="32x32" href="/bigsearch/media/search/resolutions/32x32.png">
+
+  <link rel="shortcut icon" sizes="30x30" href="/bigsearch/media/search/30x30.png">
+  <link rel="icon" sizes="30x30" href="/bigsearch/media/search/resolutions/30x30.png">
+
+  <link rel="shortcut icon" sizes="24x24" href="/bigsearch/media/search/resolutions/24x24.png">
+  <link rel="icon" sizes="24x24" href="/bigsearch/media/search/resolutions/24x24.png">
+
+  <link rel="shortcut icon" sizes="16x16" href="/bigsearch/media/search/resolutions/16x16.png">
+  <link rel="icon" sizes="16x16" href="/bigsearch/media/search/resolutions/16x16.png">
+</head>
+
+<body>
+  <!--https://classroom.google.com/_/ClassroomUi/manifest.json-->
+  <!--https://stackoverflow.com/questions/4052756/how-to-combine-html-forms-->
+  <form role="search" action="search/?" method="get">
+    <header class="center-wrapper">
+      <details>
+        <summary>BigSearch: Only one search required</summary>
+        <fieldset class="theme-select">
+          <label for="space-toggle">
+            <!--pre aria-disabled="false" aria-label="Space">Space</pre>
+            <!--object data="/26162041_1xmu_3a8n_211224.svg" type="image/svg+xml"></object-->
+            <!--https://pixabay.com/vectors/browse-search-subjects-website-42931/-->
+            <img srcset="media/space/26162041_1xmu_3a8n_211224.svg" src="media/space/26162041_1xmu_3a8n_211224.jpg" alt="Space toggle" id="space-image" class="theme-image"/>
+            <br>
+            <span id="space-text" class="theme-text">Space</span>
+          </label>
+          <!--input type="checkbox" id="space-toggle" class="theme-toggle" name="spc" value="yes"-->
+          <input type="radio" id="space-toggle" class="theme-toggle" name="bg" value="space"/>
+          <!--<a href="https://www.freepik.com/free-vector/astronomy-theme-with-telescope-building_26162041.htm#query=space%20svg&position=38&from_view=keyword&track=ais&uuid=867b87c7-75cb-45a5-b6a7-683b516f809a">Image by brgfx</a> on Freepik-->
+          <label for="default-toggle">
+            <img srcset="media/search/magnifier-svgrepo-com.svg" src="media/search/magnifier-svgrepo-com.png" alt="Default toggle" id="default-image" class="theme-image"/>
+            <br><span id="default-text" class="theme-text">Default</span>
+          </label>
+          <!--input type="radio" id="default-toggle" class="theme-toggle" name="bg" value="default"/-->
+          <input type="radio" id="default-toggle" class="theme-toggle" name="bg" value="default"/><!--checked-->
+          
+          <label for="random-toggle">
+            <img srcset="media/question/question-svgrepo-com.svg" src="media/question/question-svgrepo-com.png" alt="Random toggle" id="default-image" class="theme-image"/>
+            <br><span id="default-text" class="theme-text">Random</span>
+          </label>
+          <!--input type="radio" id="default-toggle" class="theme-toggle" name="bg" value="default"/-->
+          <input type="radio" id="random-toggle" class="theme-toggle" name="bg" value="random"/>
+        </fieldset>
+          
+      </details>
+    </header>
+    
+    <fieldset id="search-field" class="center-wrapper vertical-center"> <!--role="search" action="/search/?" method="get"-->
+      <!--onsubmit="search_click();"><-->
+      <label for="searchbar">Search here:</label>
+      <!--div class="searchbar2">
+        <button id="search-button" type="submit"><!--Search>🔍</button>
+        <input type="search" id="searchbar" name="q" placeholder="Search Big" spellcheck required autocomplete="on" size="40"/>
+    </div-->
+      <input type="search" id="searchbar" name="q" placeholder="Search Big" spellcheck required autocomplete="on" size="40"/>
+      <span id="validity" title="This will turn into a green checkmark when you have a search term."></span>
+      <button id="search-button" type="submit">Search</button><!--onclick="search_click();"><-->
+      <!--span id="validity" title="This will turn into a green checkmark when you have a search term."></span-->
+  
+    <div class="flex-break"></div>
+    
+    <input type="text" id="exclusions" name="excl" placeholder="Excluded sources" title='", " to split' class="under-field"/>
+    <input type="text" id="inclusions" name="incl" placeholder="Included sources" title='", " to split, overrides exclusions and standards' class="under-field"/>
+    <!--select id="exclusions" name="exclusions" size="2">
+      <option value="all">All</option>
+      <option value="all2">All2</option>
+  </select-->
+  </fieldset>
+  </form>
+  <!--div id="link-container"></div-->
+  <!--script type="text/javascript" src="script.js"></script-->
+  <!--a href="https://pixabay.com/videos/search/horses%20sadle/?manual_search=1">Sadles</a-->
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <!--script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script-->
+</body>
+
+</html>
