@@ -1,0 +1,258 @@
+{
+    "Google": {
+        "name": "Google",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://www.google.com/search?q=",
+        "after": "",
+        "categories": ["search engine"]
+    },
+    "Google images": {
+        "name": "Google images",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://www.google.com/search?q=",
+        "after": "&tbm=isch",
+        "categories": ["search engine", "image", "photo"]
+    },
+    "Youtube": {
+        "name": "Youtube",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://www.youtube.com/results?search_query=",
+        "after": "",
+        "categories": ["video", "streaming"]
+    },
+    "Gmail": {
+        "name": "Gmail",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://mail.google.com/mail/u/0/#search/",
+        "after": "",
+        "categories": ["mail", "personal"]
+    },
+    "Wikipedia": {
+        "name": "Wikipedia",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://en.wikipedia.org/w/index.php?search=",
+        "after": "",
+        "categories": ["wiki"]
+    },
+    "Wikipedia direct": {
+        "name": "Wikipedia direct",
+        "term": "",
+        "term_processing": "underscore_process_term",
+        "before": "https://en.wikipedia.org/wiki/",
+        "after": "",
+        "categories": ["wiki", "direct"]
+    },
+    "Yahoo": {
+        "name": "Yahoo",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://search.yahoo.com/search?p=",
+        "after": "",
+        "categories": ["search engine"]
+    },
+    "Yahoo images": {
+        "name": "Yahoo images",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://images.search.yahoo.com/search/images?p=",
+        "after": "",
+        "categories": ["search engine", "image", "picture", "photo"]
+    },
+    "Yahoo news": {
+        "name": "Yahoo news",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://news.search.yahoo.com/search?p=",
+        "after": "",
+        "categories": ["search engine", "news"]
+    },
+    "Yahoo local": {
+        "name": "Yahoo local",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://search.yahoo.com/local/s?p=",
+        "after": "",
+        "categories": ["search engine", "local"]
+    },
+    "Yahoo shopping": {
+        "name": "Yahoo shopping",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://shopping.yahoo.com/search?p=",
+        "after": "",
+        "categories": ["search engine", "shopping"]
+    },
+    "Bing": {
+        "name": "Bing",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://bing.com/search?q=",
+        "after": "",
+        "categories": ["search engine"]
+    },
+    "Bing images": {
+        "name": "Bing images",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://www.bing.com/images/search?q=",
+        "after": "",
+        "categories": ["search engine", "image", "picture", "photo"]
+    },
+    "Pixabay images": {
+        "name": "Pixabay images",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/images/search/",
+        "after": "",
+        "categories": ["royalty free", "image", "svg", "picture", "photo", "stock"]
+    },
+    "Pixabay music": {
+        "name": "Pixabay music",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/music/search/",
+        "after": "",
+        "categories": ["royalty free", "music", "sound", "stock"]
+    },
+    "Pixabay users": {
+        "name": "Pixabay users",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/users/search/",
+        "after": "",
+        "categories": ["registry", "users", "royalty free", "stock"]
+    },
+    "Pixabay gifs": {
+        "name": "Pixabay gifs",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/gifs/search/",
+        "after": "",
+        "categories": ["royalty free", "gif", "animated", "stock"]
+    },
+    "Pixabay sound-effects": {
+        "name": "Pixabay sound-effects",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/sound-effects/search/",
+        "after": "",
+        "categories": ["royalty free", "sound", "stock"]
+    },
+    "Pixabay video": {
+        "name": "Pixabay video",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://pixabay.com/videos/search/",
+        "after": "",
+        "categories": ["royalty free", "video", "stock"]
+    },
+    "Spotify": {
+        "name": "Spotify",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://open.spotify.com/search/",
+        "after": "",
+        "categories": ["subscription", "music", "streaming"]
+    },
+    "Steam": {
+        "name": "Steam",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://store.steampowered.com/search/?term=",
+        "after": "",
+        "categories": ["shopping", "game"]
+    },
+    "Ebay": {
+        "name": "Ebay",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://www.ebay.com/sch/i.html?_nkw=",
+        "after": "",
+        "categories": ["shopping", "secondhand", "used"]
+    },
+    "Tradera": {
+        "name": "Tradera",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://www.tradera.com/search?q=",
+        "after": "",
+        "categories": ["shopping", "secondhand", "used"]
+    },
+    "FreeSound": {
+        "name": "FreeSound",
+        "term": "",
+        "term_processing": "plus_process_term",
+        "before": "https://freesound.org/search/?q=",
+        "after": "",
+        "categories": ["sound", "royalty free"]
+    },
+    "Prisjakt": {
+        "name": "Prisjakt",
+        "term": "",
+        "term_processing": "_20_process_term",
+        "before": "https://www.prisjakt.nu/search?search=",
+        "after": "",
+        "categories": ["shopping", "money-saving"]
+    },
+    "Stack Overflow": {
+      "name": "Stack Overflow",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://stackoverflow.com/search?q=",
+      "after": "",
+      "categories": ["programming", "forum"]
+    },
+    "Replit": {
+      "name": "Replit",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://replit.com/search?query=",
+      "after": "",
+      "categories": ["programming", "forum", "projects"]
+    },
+    "Downdetector": {
+      "name": "Downdetector",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://downdetector.com/search/?q=",
+      "after": "",
+      "categories": ["status", "website"]
+  },
+  "Reddit": {
+      "name": "Reddit",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://www.reddit.com/search/?q=",
+      "after": "",
+      "categories": ["forum", "social media"]
+  },
+  "SVG Repo": {
+      "name": "SVG Repo",
+      "term": "",
+      "term_processing": "dash_process_term",
+      "before": "https://www.svgrepo.com/vectors/",
+      "after": "",
+      "categories": ["forum", "image", "media", "svg"]
+  },
+  "Super User": {
+      "name": "Super User",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://superuser.com/search?q=",
+      "after": "",
+      "categories": ["forum", "programming", "computer"]
+  },
+  "MDN": {
+      "name": "MDN",
+      "term": "",
+      "term_processing": "plus_process_term",
+      "before": "https://developer.mozilla.org/en-US/search?q=",
+      "after": "",
+      "categories": ["forum", "programming", "computer"]
+  }
+}
